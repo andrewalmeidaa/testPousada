@@ -125,18 +125,20 @@ menu > ul > li{
 }
 
 .containerBemVindoContent{
-	height: 400px;
+	height: 600px;
 	width: 1000px;
 	background-color: #fff;
 	display: flex;
+	border-radius: 5px;
 }
 
 .containerBemVindoContentImg{
 	background-image: url(./image/miniBemVindo.jpg);
-	max-height: 400px;
+	max-height: 500px;
 	width: 50%;
-	height: auto;
 	background-size: cover;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .containerBemVindoContentImg h1{
@@ -147,7 +149,7 @@ menu > ul > li{
 .acomodacoes{
 	height: 900px;
 	width: 100%;
-	background-color:  antiquewhite;
+	background-color: antiquewhite;
 	
 }
 
@@ -236,6 +238,7 @@ menu > ul > li{
 	position: absolute;
 	padding-left: 2%;
 	padding-bottom: 0.5%;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .services{
@@ -290,11 +293,11 @@ menu > ul > li{
 }
 
 .servicesBoxes p{
+	color: rgb(0, 0, 0);
 	text-align: center;
 	font-size: 14px;
-	color: black;
-	font-family: 'Noto Sans', sans-serif;
 	padding: 5px;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .servicesBoxes button{
@@ -364,4 +367,13 @@ menu > ul > li{
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+}
+
+.direitos{
+	background-color: black;
+	color: #fff;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 }
