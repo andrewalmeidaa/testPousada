@@ -66,13 +66,15 @@ menu > ul > li{
 	height: 900px;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center top; 
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	padding-left: 20%;
 	padding-top: 5%;
 }
+
+
 
 .imageBannerBox{
 	height: 350px;
