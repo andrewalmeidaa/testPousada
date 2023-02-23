@@ -2,11 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	font-family: 'Roboto Flex', sans-serif;
+	font-weight: 300;
+	color: rgb(46, 44, 44);
+}
+
+body{
+	height: 90vh;
+	width: 100%;
 }
 
 .navBar{
 	height: 80px;
-	width: auto;
+	max-width: 100%;
 	background-color: antiquewhite;
 	display: flex;
 	flex-direction: row;
@@ -16,10 +24,8 @@
 
 .navBar img{
 	height: 50px;
-	object-fit: cover;
-	
+	object-fit:cover;
 }
-
 
 span#burguer{
 	background-color: orange;
@@ -50,7 +56,7 @@ menu{
 menu>ul{
 	list-style-type: none;
 	cursor: pointer;
-
+	color: white;
 }
 
 menu > ul > li{
@@ -62,19 +68,21 @@ menu > ul > li{
 }
 
 .imgBanner{
-	background-image: url(./image/externoPrincipal.jpg);
 	height: 900px;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center top; 
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-left: 20%;
-	padding-top: 5%;
 }
 
+.imgBanner img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
 
+.imgBanner div{
+	margin-left: 15%;
+}
 
 .imageBannerBox{
 	height: 350px;
@@ -89,6 +97,8 @@ menu > ul > li{
 	padding: 20px;
 	padding-left: 15px;
 	gap: 40px;
+	position:absolute;
+
 }
 
 .imageBannerBox button{
@@ -114,7 +124,6 @@ menu > ul > li{
 	background-color: orange;
 }
 
-
 .containerBemVindo{
 	height: 600px;
 	width: 100%;
@@ -134,13 +143,13 @@ menu > ul > li{
 	border-radius: 5px;
 }
 
-.containerBemVindoContentImg{
-	background-image: url(./image/miniBemVindo.jpg);
-	max-height: 500px;
+.containerBemVindoContent img{
+	height: 500px;
 	width: 50%;
-	background-size: cover;
+	object-fit: cover;
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
+	object-fit: cover;
 }
 
 .containerBemVindoContentImg h1{
@@ -148,12 +157,6 @@ menu > ul > li{
 	margin-bottom: 20px;
 }
 
-.acomodacoes{
-	height: 900px;
-	width: 100%;
-	background-color: antiquewhite;
-	
-}
 
 .containerBemVindoContentText{
 	width: 50%;
@@ -170,11 +173,16 @@ menu > ul > li{
 	font-size: 14px;
 	opacity: 0.9;
 	padding-top: 5%;
-	font-family: 'Noto Sans', sans-serif; 
 	font-weight: 500;
 	color: black;
 }
 
+.acomodacoes{
+	height: 900px;
+	width: 100%;
+	background-color: antiquewhite;
+	
+}
 .acomodacoes h2{
 	padding-left: 20%;
 	padding-top: 5%;
@@ -199,6 +207,7 @@ menu > ul > li{
 	background-size:cover;
 	background-repeat: no-repeat;
 }
+
 #item2{
     grid-area: item2;
     min-width: 250px;
@@ -206,6 +215,7 @@ menu > ul > li{
 	background-size:cover;
 	background-repeat: no-repeat;
 }
+
 #item3{
     grid-area: item3;
     min-width: 250px;
@@ -213,6 +223,7 @@ menu > ul > li{
 	background-size:cover;
 	background-repeat: no-repeat;
 }
+
 #item4{
     grid-area: item4;
     min-width: 250px;
@@ -240,17 +251,16 @@ menu > ul > li{
 	position: absolute;
 	padding-left: 2%;
 	padding-bottom: 0.5%;
-	font-family: 'Noto Sans', sans-serif;
 }
 
 .services{
-	
 	width: 100%;
 	height: 700px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	padding: 10px;
 }
 
 .test{
@@ -264,8 +274,6 @@ menu > ul > li{
 	color: #fff;
 	font-size: 25px;
 }
-
-
 
 .servicesBoxes{
 	width: 400px;
@@ -286,7 +294,6 @@ menu > ul > li{
 	transform: scale(1.1);
 }
 
-
 .servicesBoxes h3{
 	padding-top:10%;
 	text-align: center;
@@ -299,21 +306,20 @@ menu > ul > li{
 	text-align: center;
 	font-size: 14px;
 	padding: 5px;
-	font-family: 'Noto Sans', sans-serif;
 }
 
 .servicesBoxes button{
 	width: 150px;
 	height: 50px;
 	margin-top: 40px;
-	margin-left: 100px;
+	margin-left: 25%;
 	border: none;
 	background-color: rgb(70, 68, 68);
 	color: #fff;
 	cursor: pointer;
-	font-family: 'Noto Sans', sans-serif;
 	transition: .5s;
 	border-radius: 5px;
+	font-weight: 500;
 }
 
 .servicesBoxes button:hover{
@@ -340,7 +346,7 @@ menu > ul > li{
 	cursor: pointer; 
 	transition: 0.5s; 
 	border-radius: 5px;
-	font-family: 'Noto Sans', sans-serif;
+	
 }
 
 .reserveJa button:hover{
@@ -380,9 +386,61 @@ menu > ul > li{
 	align-items: center;	
 }
 
+.direitos p{
+	color: white;
+}
 
 .map iframe{
 	height: 200px;
 	width: 300px;
 	padding: 10px;
+}
+
+/* MEDIA QUERY */
+
+
+@media(max-width:1024px){
+    .imgBanner div{
+        margin-left: 1%;
+    }
+    .navBar{
+        height: 130px;
+        
+    }
+}
+
+@media(max-width:768px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    span#burguer{
+        width: 60%;
+        border-radius: 3px;
+        background-color: orange;
+    }
+
+    .imgBanner{
+        height: auto;
+    }
+    .imgBanner img{
+
+        display: flex;
+    }
+
+    .imgBanner div{
+        width: 97%;
+        height: auto;
+    }
+}
+
+@media(max-width: 520px){
+    .imgBanner{
+        height: 500px;
+    }
+
+    .imgBanner div{
+        height: 50%;
+    }
 }
