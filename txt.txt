@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto Flex', sans-serif;
+	font-weight: 300;
+	color: rgb(46, 44, 44);
+}
+
+body{
+	height: 90vh;
+	width: 100%;
+}
+
+.navBar{
+	height: 80px;
+	max-width: 100%;
+	background-color: antiquewhite;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navBar img{
+	height: 50px;
+	object-fit:cover;
+}
+
+span#burguer{
+	background-color: orange;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+span#burguer:hover{
+	background-color: #fff;
+	color: black; 
+	transition: 0.3s;
+}
+
+menu{
+	display: none;
+	background-color: black;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-top: 1%;
+	padding: 5px;
+	
+}
+menu>ul{
+	list-style-type: none;
+	cursor: pointer;
+	color: white;
+}
+
+menu > ul > li{
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 25px;
+	
+}
+
+.imgBanner{
+	height: 900px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.imgBanner img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.imgBanner div{
+	margin-left: 15%;
+}
+
+.imageBannerBox{
+	height: 350px;
+	width: 500px;
+	background-color: #fff;
+	opacity: 0.9;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 20px;
+	padding-left: 15px;
+	gap: 40px;
+	position:absolute;
+
+}
+
+.imageBannerBox button{
+	height: 45px;
+	border: none;
+	background-color: orange;
+	opacity: 1;
+	padding: 10px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.imageBannerBox h1{
+	font-size: 40px;
+}
+
+.imageBannerBox p{
+	font-size: 19px;
+}
+
+.imageBannerBox button{
+	background-color: orange;
+}
+
+.acomodacoes{
+	height: 900px;
+	width: 100%;
+	background-color: antiquewhite;
+	
+}
+
+.containerBemVindo{
+	height: 600px;
+	width: 100%;
+	background-color: rgb(170, 159, 144);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 5%;
+
+}
+
+.containerBemVindoContent{
+	height: 600px;
+	width: 1000px;
+	background-color: #fff;
+	display: flex;
+	border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.containerBemVindoContent img{
+	height: 500px;
+	width: 50%;
+	object-fit: cover;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	object-fit: cover;
+}
+
+.containerBemVindoContentImg h1{
+	padding-right: 50%;
+	margin-bottom: 20px;
+}
+
+.containerBemVindoContentText{
+	width: 50%;
+	padding: 10px;
+}
+
+.containerBemVindoContentText h2{
+	text-align: start;
+	opacity: 0.9;
+	padding-top: 20%;
+}
+
+.containerBemVindoContentText p{
+	font-size: 14px;
+	opacity: 0.9;
+	padding-top: 5%;
+	font-weight: 500;
+	color: black;
+}
+
+
+.acomodacoes h2{
+	padding-left: 20%;
+	padding-top: 5%;
+}
+
+.acomodacoesContainer{
+	width: 70%;
+	height: 65%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	grid-template-areas: 
+	"item1 item2 item3"
+	"item1 item4 item4";
+	gap: 5px;
+}
+
+#item1{
+    grid-area: item1;
+	/* background-image: url(./acomodacoes/casal.jpg);
+	background-size:cover;
+	background-repeat: no-repeat; */
+}
+
+#item1-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item1-placeholder{
+    
+}
+
+#item2{
+    grid-area: item2;
+    min-width: 250px;
+	background-image: url(./acomodacoes/duplo.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#item3{
+    grid-area: item3;
+    min-width: 250px;
+	background-image: url(./acomodacoes/duplo\ 2.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#item4{
+    grid-area: item4;
+    min-width: 250px;
+	background-image: url(./acomodacoes/simples.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.acomodacoesContainertipo{
+	background-position: center;
+	display: flex;
+	align-items: flex-end; 
+}
+
+.acomodacoesContainertipoBanner{
+	height: 45px;
+	width: 40%;
+	background-color: black;
+	opacity: 0.5;	
+    position:absolute;
+}
+
+.acomodacoesContainertipo h3{
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+}
+
+
+/* MEDIA */
+
+@media(max-width:1024px){
+    .imgBanner div{
+        margin-left: 1%;
+    }
+    .navBar{
+        height: 130px;
+        
+    }
+
+    .containerBemVindoContent{
+        width: auto;
+        height: auto;
+    }
+
+    
+}
+
+@media(max-width:768px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    span#burguer{
+        width: 60%;
+        border-radius: 3px;
+        background-color: orange;
+    }
+
+    .imgBanner{
+        height: auto;
+    }
+    .imgBanner img{
+
+        display: flex;
+    }
+
+    .imgBanner div{
+        width: 97%;
+        height: auto;
+    }
+
+    .containerBemVindo{
+        height: auto;
+    }
+
+    .containerBemVindoContent img{
+        width: 100%;
+       
+    }
+
+    .containerBemVindoContent div{
+        width: 100%;
+        height: 100%;
+    }
+
+    .containerBemVindoContentText h2{
+        padding-top: 0;
+    }
+    
+}
+
+@media(max-width: 520px){
+    .imgBanner{
+        height: 500px;
+    }
+
+    .imgBanner div{
+        height: 50%;
+    }
+}

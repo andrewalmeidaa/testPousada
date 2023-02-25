@@ -55,7 +55,6 @@ menu{
 }
 menu>ul{
 	list-style-type: none;
-	cursor: pointer;
 	color: white;
 }
 
@@ -64,7 +63,14 @@ menu > ul > li{
 	padding: 10px;
 	text-align: center;
 	font-size: 25px;
-	
+	color: white;
+}
+
+menu > ul > li>a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	text-align: center;
 }
 
 .imgBanner{
@@ -110,6 +116,12 @@ menu > ul > li{
 	color: #fff;
 	font-size: 12px;
 	border-radius: 5px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.imageBannerBox button:hover{
+	background-color: rgb(70, 68, 68);
 }
 
 .imageBannerBox h1{
@@ -124,6 +136,13 @@ menu > ul > li{
 	background-color: orange;
 }
 
+.acomodacoes{
+	height: 900px;
+	width: 100%;
+	background-color: antiquewhite;
+	
+}
+
 .containerBemVindo{
 	height: 600px;
 	width: 100%;
@@ -133,6 +152,7 @@ menu > ul > li{
 	align-items: center;
 	flex-direction: column;
 	padding: 5%;
+
 }
 
 .containerBemVindoContent{
@@ -141,6 +161,7 @@ menu > ul > li{
 	background-color: #fff;
 	display: flex;
 	border-radius: 5px;
+    flex-wrap: wrap;
 }
 
 .containerBemVindoContent img{
@@ -156,7 +177,6 @@ menu > ul > li{
 	padding-right: 50%;
 	margin-bottom: 20px;
 }
-
 
 .containerBemVindoContentText{
 	width: 50%;
@@ -177,12 +197,7 @@ menu > ul > li{
 	color: black;
 }
 
-.acomodacoes{
-	height: 900px;
-	width: 100%;
-	background-color: antiquewhite;
-	
-}
+
 .acomodacoes h2{
 	padding-left: 20%;
 	padding-top: 5%;
@@ -203,33 +218,45 @@ menu > ul > li{
 
 #item1{
     grid-area: item1;
-	background-image: url(./acomodacoes/casal.jpg);
-	background-size:cover;
-	background-repeat: no-repeat;
+}
+
+#item1-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#item2-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#item3-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+#item4-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 #item2{
     grid-area: item2;
-    min-width: 250px;
-	background-image: url(./acomodacoes/duplo.jpg);
-	background-size:cover;
-	background-repeat: no-repeat;
+	height: 330px;
 }
 
 #item3{
     grid-area: item3;
-    min-width: 250px;
-	background-image: url(./acomodacoes/duplo\ 2.jpg);
-	background-size:cover;
-	background-repeat: no-repeat;
+	height: 330px;
 }
 
 #item4{
     grid-area: item4;
-    min-width: 250px;
-	background-image: url(./acomodacoes/simples.jpg);
-	background-size:cover;
-	background-repeat: no-repeat;
+	height: 330px;
 }
 
 .acomodacoesContainertipo{
@@ -240,9 +267,10 @@ menu > ul > li{
 
 .acomodacoesContainertipoBanner{
 	height: 45px;
-	width: 100%;
+	width: 40%;
 	background-color: black;
 	opacity: 0.5;	
+    position:absolute;
 }
 
 .acomodacoesContainertipo h3{
@@ -319,7 +347,7 @@ menu > ul > li{
 	cursor: pointer;
 	transition: .5s;
 	border-radius: 5px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .servicesBoxes button:hover{
@@ -399,6 +427,7 @@ menu > ul > li{
 /* MEDIA QUERY */
 
 
+
 @media(max-width:1024px){
     .imgBanner div{
         margin-left: 1%;
@@ -407,6 +436,13 @@ menu > ul > li{
         height: 130px;
         
     }
+
+    .containerBemVindoContent{
+        width: auto;
+        height: auto;
+    }
+
+    
 }
 
 @media(max-width:768px){
@@ -433,6 +469,65 @@ menu > ul > li{
         width: 97%;
         height: auto;
     }
+
+    .containerBemVindo{
+        height: auto;
+    }
+
+    .containerBemVindoContent img{
+        width: 100%;
+       
+    }
+
+    .containerBemVindoContent div{
+        width: 100%;
+        height: 100%;
+    }
+
+    .containerBemVindoContentText h2{
+        padding-top: 0;
+    }
+
+
+
+	.services{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+    
+	.servicesBoxes{
+		width: 90%;
+		height: 350px;
+	}
+
+	.servicesBoxes h3{
+		padding: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin: 0;
+	}
+
+	.servicesBoxes p{
+		padding: 0;
+		margin: 0;
+		margin-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.servicesBoxes button{
+		padding: 0;
+		margin: 0;
+		margin-left: 40%;
+		margin-top: 20px;
+	}
+
+	.containerinform{
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
 }
 
 @media(max-width: 520px){
