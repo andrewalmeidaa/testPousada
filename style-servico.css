@@ -113,3 +113,264 @@ menu > ul > li>a:hover{
 	margin-right: auto;
 	margin-top: 5px;
 }
+
+.containerServicesOptions{
+    height: 90vh;
+}
+
+.containerServices{
+    background-color: antiquewhite;
+}
+
+.containerServicesTitles h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerServicesTitles h5{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.containerServicesTitles{
+    padding-top: 90px;
+}
+
+.containerServicesOptions{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.containerServicesOptionsGastronomia{
+    background-color: #fff;
+    height: 600px;
+    width: 1200px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsGastronomiaTextImg{
+    
+}
+
+.containerServicesOptionsGastronomiaTextImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.containerServicesOptionsGastronomiaText{
+    width: 55%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; */
+    padding: 40px;
+    padding-top: 15%;
+}
+
+.containerServicesOptionsGastronomiaText h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: orange;
+}
+
+.containerServicesOptionsGastronomiaText p{
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.containerServicesOptionsGastronomiaText hr{
+    height: 1px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsGastronomiaText button{
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.containerServicesOptionsGastronomiaText button>span>img{
+    height: 10px;
+    width: 10px;
+
+}
+
+.containerServicesOptionsAreaExterna{
+    background-color: #fff;
+    height: 600px;
+    width: 1200px;
+    display: flex;
+}
+
+.containerServicesOptionsAreaExterna img{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+}
+
+.containerServicesOptionsAreaExternaText{
+    width: 55%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; */
+    padding: 40px;
+    padding-top: 15%;
+}
+
+.containerServicesOptionsAreaExternaText h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: orange;
+}
+
+.containerServicesOptionsAreaExternaText p{
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.containerServicesOptionsAreaExternaText hr{
+    height: 1px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsAreaExternaText button{
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.containerServicesOptionsAreaExternaText button>span>img{
+    height: 10px;
+    width: 10px;
+
+}
+
+
+.containerServicesOptionsPetFrendly{
+    background-color: #fff;
+    height: 600px;
+    width: 1200px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.containerServicesOptionsPetFrendly img{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+}
+
+.containerServicesOptionsPetFrendlyText{
+    width: 55%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; */
+    padding: 40px;
+    padding-top: 15%;
+}
+
+.containerServicesOptionsPetFrendlyText h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: orange;
+}
+
+.containerServicesOptionsPetFrendlyText p{
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.containerServicesOptionsPetFrendlyText hr{
+    height: 1px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsPetFrendlyText button{
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.containerServicesOptionsPetFrendlyText button>span>img{
+    height: 10px;
+    width: 10px;
+
+}
+
+
+.containerinform{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(170, 159, 144);
+    
+}
+
+.containerinform img{
+	height: 200px;
+	width: 200px;
+	object-fit: contain;
+}
+
+.containerinformContatos{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.containerinformEndereco{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.direitos{
+	background-color: black;
+	color: #fff;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.direitos p{
+	color: white;
+}
