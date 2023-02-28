@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto Flex', sans-serif;
+	font-weight: 300;
+	color: rgb(46, 44, 44);
+}
+
+body{
+	height: 90vh;
+	width: 100%;
+}
+
+.navBar{
+	height: 80px;
+	max-width: 100%;
+	background-color: antiquewhite;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navBar img{
+	height: 50px;
+	object-fit:cover;
+}
+
+span#burguer{
+	background-color: orange;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+span#burguer:hover{
+	background-color: #fff;
+	color: black; 
+	transition: 0.3s;
+}
+
+menu{
+	display: none;
+	background-color: black;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-top: 1%;
+	padding: 5px;
+	
+}
+menu>ul{
+	list-style-type: none;
+	color: white;
+}
+
+menu > ul > li{
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+
+menu > ul > li>a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	transition: .5s;
+}
+
+menu > ul > li>a:hover{
+	border-bottom: 2px solid #fff;
+}
+
+.containerImage img{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	
+}
+
+.containerImage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerImage div{
+	position: absolute;
+	margin-top: -20px;
+}
+
+
+
+.containerImageContent h3{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.containerImageContent hr{
+	border: none;
+	height: 2px;
+	background-color: #fff;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
