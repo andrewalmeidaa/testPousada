@@ -23,7 +23,7 @@ body{
 }
 
 .navBar img{
-	height: 50px;
+	height: 100px;
 	object-fit:cover;
 }
 
@@ -65,10 +65,78 @@ menu > ul > li{
 	font-size: 25px;
 	color: white;
 }
-
 menu > ul > li>a{
 	text-decoration: none;
 	color: white;
 	font-size: 25px;
 	text-align: center;
+	transition: .7s;
+}
+
+menu > ul > li>a:hover{
+	border-bottom: 2px solid #fff;
+}
+
+.containerImage img{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	
+}
+
+.containerImage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerImage div{
+	position: absolute;
+	margin-top: -20px;
+}
+
+
+
+.containerImageContent h3{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.containerImageContent hr{
+	border: none;
+	height: 2px;
+	background-color: #fff;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+
+.boxContact{
+	background-color: antiquewhite;
+	height: 90vh;
+	
+}
+
+.boxContact h1{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 25px;
+	font-weight: 500;
+}
+
+.boxContactInform{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	gap: 10px;
+}
+
+.boxContactInform div{
+	background-color: #fff;
+	height: 200px;
+	width: 200px;
 }
