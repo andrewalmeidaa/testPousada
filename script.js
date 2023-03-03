@@ -9,7 +9,7 @@ function clickMenu(){
 
 let count = 1
 
-document.getElementById("radio1").checked = true
+document.getElementById("containerServicesOptionsGastronomiaTextImg-radio1").checked = true
 
 setInterval(function(){
     nextImage()
@@ -20,5 +20,8 @@ function nextImage(){
     if(count>3){
         count = 1
     }
-    document.getElementById("radio"+count).checked = true
+    document.getElementById("containerServicesOptionsGastronomiaTextImg-radio"+count).checked = true
 }
+
+
+
