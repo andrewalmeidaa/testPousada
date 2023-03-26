@@ -86,8 +86,6 @@ body{
     font-size: 60px;
 }
 
-
-
 .containerImage img{
 	height: 200px;
 	width: 100%;
@@ -105,8 +103,6 @@ body{
 	position: absolute;
 	margin-top: -20px;
 }
-
-
 
 .containerImageContent h3{
 	color: #fff;
@@ -199,7 +195,7 @@ body{
  
 .containerServicesOptionsGastronomiaTextImg-manual-navigation{
     position: absolute;
-    width: 45%;
+    width: 800px;
     margin-top: -50px;
     padding-right: 300px;
     display: flex;
@@ -533,4 +529,18 @@ body{
 
 .direitos p{
 	color: white;
+}
+
+/* MEDIA */
+
+
+@media(max-width:1722px){
+    .containerServicesOptionsGastronomia{
+        width: auto;
+    }
+
+    .containerServicesOptionsPetFrendly{
+        width: auto;
+    }
+
 }

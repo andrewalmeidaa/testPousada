@@ -5,6 +5,9 @@
 //         itens.style.display = 'block'
 //     }
 // }
+/*
+
+
 
 function openNav(){
     document.getElementById('myNav').style.height = '100%'
@@ -32,5 +35,8 @@ function nextImage(){
     document.getElementById("containerServicesOptionsGastronomiaTextImg-radio"+count).checked = true
 }
 
+
+
+*/
 
 
