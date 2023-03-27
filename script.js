@@ -5,7 +5,6 @@
 //         itens.style.display = 'block'
 //     }
 // }
-/*
 
 
 
@@ -37,6 +36,6 @@ function nextImage(){
 
 
 
-*/
+
 
 

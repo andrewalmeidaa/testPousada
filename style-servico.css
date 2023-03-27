@@ -533,14 +533,87 @@ body{
 
 /* MEDIA */
 
+@media(max-width:1024px){
 
-@media(max-width:1722px){
     .containerServicesOptionsGastronomia{
+        width: 600px
+    }
+    .containerServicesOptionsGastronomiaTextImg-manual-navigation{
+        width: 600px;
+    }
+
+    .containerServicesOptionsAreaExterna{
+        width: 600px;
+    }
+
+    .manual-navigation{
+        width: 600px;
+    } 
+    .containerServicesOptionsPetFrendly{
+        width: 600px;
+    }
+
+    .containerServicesOptionsPetFrendly img{
+        width: 45%;
+    }
+
+}
+
+
+@media(max-width:800px){
+
+    .containerServicesOptionsGastronomia{
+        height: 1200px;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .containerServicesOptionsGastronomiaText{
+        padding-top: 5%;
+    }
+    .containerServicesOptionsGastronomiaText{
+        height: auto;
         width: auto;
+    }
+
+    .containerServicesOptionsGastronomiaTextImg{
+        width: auto;
+    }
+
+    .containerServicesOptionsAreaExterna{
+        height: 1200px;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .containerServicesOptionsAreaExternaText{
+        width: auto;
+        height: auto;
     }
 
     .containerServicesOptionsPetFrendly{
+        height: 600px;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .containerServicesOptionsPetFrendlyText{
+        height: auto;
         width: auto;
     }
 
+
+    .containerServicesOptionsPetFrendly img{
+        width: 100%;
+        object-fit:cover;
+        height: auto;
+    }
+
+    .containerinform{
+        flex-direction: column;
+        gap: 15px;
+    }
+    *{
+        width: auto;
+    }
 }
