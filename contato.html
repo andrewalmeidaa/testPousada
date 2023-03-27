@@ -53,13 +53,17 @@
                 </div>
             </div>
             <div class="boxContactEmail" id="boxContactEmail">
-                <input type="text" placeholder="  Nome" id="name">
-                <input type="tel" name="" id="tel" placeholder="  Telefone">
-                <input type="email" placeholder="  E-mail" id="email">
-                <input type="date" placeholder="Check In"  Check In" id="dateCheckIn">
-                <input type="date" placeholder="  Check Out" id="dateCheckOut">
-                <input type="text" name="" id="textmessage" placeholder="  Mensagem" >
-                <button id="btnSend">Enviar</button>
+                <form action="https://formsubmit.co/contatormailtestee@gmail.com" method="post">
+                    <input type="hidden" name="_next" id="" value="http://127.0.0.1:5501/sucessEmail.html">
+                    <input type="hidden" name="_autoresponse" id="" value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!"> 
+                    <input type="text" placeholder="  Nome" id="name">
+                    <input type="email" placeholder="  E-mail" id="email">
+                    <input type="text" name="" id="assunto" placeholder="  Assunto">
+                    <!-- <input type="date" placeholder="Check In"  Check In" id="dateCheckIn"> -->
+                    <!-- <input type="date" placeholder="  Check Out" id="dateCheckOut"> -->
+                    <input type="text" name="" id="textmessage" placeholder="  Mensagem" >
+                    <button id="btnSend" type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </div>
