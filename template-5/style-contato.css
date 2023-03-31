@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto Flex', sans-serif;
+	font-weight: 300;
+	color: rgb(46, 44, 44);
+}
+
+body{
+	height: 90vh;
+	width: 100%;
+}
+
+.navBar{
+	height: 80px;
+	max-width: 100%;
+	background-color: antiquewhite;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navBar img{
+	height: 130px;
+	object-fit:cover;
+}
+
+.nav-button{
+    border: 0;
+    padding: 8px;
+    background-color: orange;
+    margin: 8px;
+    cursor: pointer;
+    /* aqui altera o tamanhoo simbolo azul */
+}
+
+.nav-button i{
+    color: #fff;
+}
+
+.overlay{
+    width: 100%;
+    height: 0;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    /* isso aqui determina que essa nav vai ficar sobre qualquer coisa da pagina */
+    position: fixed;
+    right:0;
+    top: 0;
+    overflow-y: hidden;
+    transition: all 0.6s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    /* aqui desce um pouco a posicao*/
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    /* assim coloca um abaixo do outro */
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+/* quando passar o mouse sobre ou ele tiver com foco isso acontecera */
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    /* uma forma de posicionar os itens */
+    font-size: 60px;
+}
+
+
+
+.containerImage img{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	
+}
+
+.containerImage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerImage div{
+	position: absolute;
+	margin-top: -20px;
+}
+
+
+
+.containerImageContent h3{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.containerImageContent hr{
+	border: none;
+	height: 2px;
+	background-color: #fff;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+
+.boxContact{
+	background-color: rgb(247, 237, 225);
+	height: 90vh;
+	
+}
+
+.boxContact h1{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 55px;
+	font-weight: 500;
+}
+
+.boxContactInform{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100vh;
+	gap: 60px;
+}
+
+/* .boxContactInform div{
+	background-color: #fff;
+	margin-top: -290px;
+	box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.28);
+	border-radius: 5px;
+	
+} */
+
+#boxContactEmail{
+	width: 600px;
+	
+	background-color: #fff;
+	margin-top: -290px;
+	box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.28);
+	border-radius: 5px;
+	height: 400px;
+}
+
+.boxContactEmail input{
+	text-align: center;
+}
+
+.boxContactReserva{
+	padding: 10px;
+	padding-left: 40px;
+	width: 600px;
+	height: 400px;
+
+	background-color: #fff;
+	margin-top: -290px;
+	box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.28);
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.boxContactReserva h3{
+	font-size: 35px;
+	padding-top: 40px;
+	color: orange;
+	font-weight: 600;
+}
+
+.boxContactReserva hr{
+	width: 30%;
+	height: 2px;
+	border: none;
+	background-color: #000;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+ .boxContactReserva p{
+	padding-bottom: 30px;
+	font-size: 20px;
+} 
+
+.boxContactReserva img{
+	padding-bottom: 30px;
+
+}
+
+
+.boxContactReservaNumbers{
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	flex-direction: column;
+}
+
+.boxContactReservaNumbers{
+	display: inline-block;
+}
+
+.boxContactReservaNumbers div{
+	display: flex;
+	align-items: center;
+}
+
+.boxContactReserva div>img{
+	width: 60px;
+	height: 60px;
+	padding-right: 5px;
+}
+
+.boxContactEmail{
+	padding: 30px;
+	width: 550px;
+	height: 400px;
+	padding-top: 50px;
+}
+
+.boxContactEmail input{
+	border: 1px solid #947777;
+	border-radius: 4px;
+	
+}
+
+#name{
+	height: 40px;
+	width: 520px;
+	margin-bottom: 10px;
+}
+
+#assunto{
+	height: 45px;
+	width: 520px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+#email{
+	height: 45px;
+	width: 520px;
+	margin-bottom: 10px;
+}
+
+#dateCheckIn{
+	height: 45px;
+	width: 255px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+#dateCheckOut{
+	height: 45px;
+	width: 255px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#textmessage{
+	height: 100px;
+	width: 520px;
+	margin-bottom: 10px;
+}
+
+#btnSend{
+	height: 45px;
+	width: 100px;
+	border: none;
+	background-color: rgb(209, 142, 18);
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-left: 200px;
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#btnSend:hover{
+	background-color: orange;
+
+}
+
+
+.containerinform{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(170, 159, 144);
+	flex-wrap: wrap;
+}
+
+.containerinform img{
+	height: 200px;
+	width: 200px;
+	object-fit: contain;
+}
+
+.containerinformContatos{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.containerinformEndereco{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.direitos{
+	background-color: black;
+	color: #fff;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.direitos p{
+	color: white;
+}
+
+.map iframe{
+	height: 200px;
+	width: 500px;
+	padding: 10px;
+}
+
+/* MEDIAS */
+
+@media(max-width:1024px){
+	.boxContact{
+		width: 100%;
+		height: auto;
+	}
+	.boxContactInform{
+		flex-direction: column;
+		/* height: auto; */
+		gap: 300px;
+		margin-top: 130px;
+	}
+	
+	.boxContactReserva{
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+	}
+
+	#boxContactEmail{
+		width: 70%;
+		height: auto;
+		
+	}
+
+	#tel{
+		width: 520px;
+	}
+	
+	#email{
+		width: 520px;
+	}
+	
+	#dateCheckIn{
+		width: 520px;
+	}
+	
+	#dateCheckOut{
+		width: 520px;
+	}
+}
+
+@media(max-width:830px){
+	#name{
+		width: 300px;
+	}
+
+	#assunto{
+		width: 300px;
+	}
+	
+	#email{
+		width: 300px;
+	}
+	
+	#dateCheckIn{
+		width: 300px;
+	}
+	
+	#dateCheckOut{
+		width: 300px;
+	}
+
+	#textmessage{
+		width: 300px;
+	}
+	#btnSend{
+		margin-left: 95px;
+	}
+
+	.map iframe{
+		width: auto;
+		height: auto;
+	}
+
+}
+
+@media(max-width:518px){
+	#name{
+		width: 200px;
+	}
+
+	#assunto{
+		width: 200px;
+	}
+	
+	#email{
+		width: 200px;
+	}
+	
+	#dateCheckIn{
+		width: 200px;
+	}
+	
+	#dateCheckOut{
+		width: 200px;
+	}
+
+	#textmessage{
+		width: 200px;
+	}
+
+	#btnSend{
+		margin-left: 55px;
+	}
+
+}
+
+@media(max-width:390px){
+	
+	.boxContact{
+		height: auto;
+	}
+	.boxContactReserva{
+		padding: 3px;	
+	}
+
+	.boxContactReserva{
+		position: relative;
+	}
+
+	.boxContactEmail{
+		position: relative;
+	}
+
+	
+
+	.direitos{
+		text-align: center;
+	}
+}

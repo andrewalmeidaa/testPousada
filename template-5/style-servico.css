@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto Flex', sans-serif;
+	font-weight: 300;
+	color: rgb(46, 44, 44);
+}
+
+body{
+	height: 90vh;
+	width: 100%;
+}
+
+.navBar{
+	height: 80px;
+	max-width: 100%;
+	background-color: antiquewhite;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navBar img{
+	height: 130px;
+	object-fit:cover;
+}
+
+.nav-button{
+    border: 0;
+    padding: 8px;
+    background-color: orange;
+    margin: 8px;
+    cursor: pointer;
+    /* aqui altera o tamanhoo simbolo azul */
+}
+
+.nav-button i{
+    color: #fff;
+}
+
+.overlay{
+    width: 100%;
+    height: 0;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    /* isso aqui determina que essa nav vai ficar sobre qualquer coisa da pagina */
+    position: fixed;
+    right:0;
+    top: 0;
+    overflow-y: hidden;
+    transition: all 0.6s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    /* aqui desce um pouco a posicao*/
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    /* assim coloca um abaixo do outro */
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+/* quando passar o mouse sobre ou ele tiver com foco isso acontecera */
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    /* uma forma de posicionar os itens */
+    font-size: 60px;
+}
+
+.containerImage img{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	
+}
+
+.containerImage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerImage div{
+	position: absolute;
+	margin-top: -20px;
+}
+
+.containerImageContent h3{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.containerImageContent hr{
+	border: none;
+	height: 2px;
+	background-color: #fff;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+
+.containerServicesOptions{
+    height: 90vh;
+}
+
+.containerServicesOptions button{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.containerServicesOptions button:hover{
+    background-color: rgb(70, 68, 68);
+}
+
+.containerServices{
+    background-color: antiquewhite;
+}
+
+.containerServicesTitles h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerServicesTitles h5{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.containerServicesTitles{
+    padding-top: 90px;
+}
+
+.containerServicesOptions{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.containerServicesOptionsGastronomia{
+    background-color: #fff;
+    height: 600px;
+    width: 1200px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsGastronomiaTextImg{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.containerServicesOptionsGastronomiaTextImg-slides{
+    width: 600%;
+    /* altera o quanto da imagem aparece */
+    height: 100%;
+    display: flex;
+}
+
+.containerServicesOptionsGastronomiaTextImg-slides input{
+    display: none;
+}
+
+.containerServicesOptionsGastronomiaTextImg-slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+ 
+.containerServicesOptionsGastronomiaTextImg-manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -50px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerServicesOptionsGastronomiaTextImg-manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.containerServicesOptionsGastronomiaTextImg-manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.containerServicesOptionsGastronomiaTextImg-manual-btn:hover{
+    background-color: #fff;
+}
+
+#containerServicesOptionsGastronomiaTextImg-radio1:checked ~ .first{
+    margin-left: 0;
+    /* se tiver selecionado vai jogando a imagem para o lado*/
+}
+
+#containerServicesOptionsGastronomiaTextImg-radio2:checked ~ .first{
+    margin-left: -25%;
+    /* se tiver selecionado vai jogando a imagem para o lado*/
+}
+
+#containerServicesOptionsGastronomiaTextImg-radio3:checked ~ .first{
+    margin-left: -50%;
+    /* se tiver selecionado vai jogando a imagem para o lado*/
+}
+
+/* aqui ja esta funcionando */
+
+
+.containerServicesOptionsGastronomiaTextImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.containerServicesOptionsGastronomiaText{
+    width: 55%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; */
+    padding: 40px;
+    padding-top: 15%;
+}
+
+.containerServicesOptionsGastronomiaText h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: orange;
+}
+
+.containerServicesOptionsGastronomiaText p{
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.containerServicesOptionsGastronomiaText hr{
+    height: 1px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsGastronomiaText button{
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.containerServicesOptionsGastronomiaText button>span>img{
+    height: 10px;
+    width: 10px;
+
+}
+
+.containerServicesOptionsAreaExterna{
+    background-color: #fff;
+    height: 600px;
+    width: 1200px;
+    display: flex;
+}
+
+
+/*
+.containerServicesOptionsAreaExterna img{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+} */
+
+
+
+
+.containerServicesOptionsAreaExternaImg{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.slides{
+    width: 600%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 45%;
+    margin-top: -50px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+    /* se tiver selecionado vai jogando a imagem para o lado*/
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+    /* se tiver selecionado vai jogando a imagem para o lado*/
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+    /* se tiver selecionado vai jogando a imagem para o lado*/
+}
+
+
+
+.containerServicesOptionsAreaExterna>img{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+}
+
+.containerServicesOptionsAreaExternaText{
+    width: 55%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; */
+    padding: 40px;
+    padding-top: 15%;
+}
+
+.containerServicesOptionsAreaExternaText h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: orange;
+}
+
+.containerServicesOptionsAreaExternaText p{
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.containerServicesOptionsAreaExternaText hr{
+    height: 1px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsAreaExternaText button{
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.containerServicesOptionsAreaExternaText button>span>img{
+    height: 10px;
+    width: 10px;
+
+}
+
+
+.containerServicesOptionsPetFrendly{
+    background-color: #fff;
+    height: 600px;
+    width: 1200px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.containerServicesOptionsPetFrendly img{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+}
+
+.containerServicesOptionsPetFrendlyText{
+    width: 55%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; */
+    padding: 40px;
+    padding-top: 15%;
+}
+
+.containerServicesOptionsPetFrendlyText h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: orange;
+}
+
+.containerServicesOptionsPetFrendlyText p{
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.containerServicesOptionsPetFrendlyText hr{
+    height: 1px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.containerServicesOptionsPetFrendlyText button{
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.containerServicesOptionsPetFrendlyText button>span>img{
+    height: 10px;
+    width: 10px;
+
+}
+
+
+.containerinform{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(170, 159, 144);
+    
+}
+
+.containerinform img{
+	height: 200px;
+	width: 200px;
+	object-fit: contain;
+}
+
+.containerinformContatos{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.containerinformEndereco{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.direitos{
+	background-color: black;
+	color: #fff;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.direitos p{
+	color: white;
+}
+
+/* MEDIA */
+
+@media(max-width:1024px){
+
+    .containerServicesOptionsGastronomia{
+        width: 600px
+    }
+    .containerServicesOptionsGastronomiaTextImg-manual-navigation{
+        width: 600px;
+    }
+
+    .containerServicesOptionsAreaExterna{
+        width: 600px;
+    }
+
+    .manual-navigation{
+        width: 600px;
+    } 
+    .containerServicesOptionsPetFrendly{
+        width: 600px;
+    }
+
+    .containerServicesOptionsPetFrendly img{
+        width: 45%;
+    }
+
+}
+
+
+@media(max-width:800px){
+
+    .containerServicesOptionsGastronomia{
+        height: 1200px;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .containerServicesOptionsGastronomiaText{
+        padding-top: 5%;
+    }
+    .containerServicesOptionsGastronomiaText{
+        height: auto;
+        width: auto;
+    }
+
+    .containerServicesOptionsGastronomiaTextImg{
+        width: auto;
+    }
+
+    .containerServicesOptionsAreaExterna{
+        height: 1200px;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .containerServicesOptionsAreaExternaText{
+        width: auto;
+        height: auto;
+    }
+
+    .containerServicesOptionsPetFrendly{
+        height: 600px;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .containerServicesOptionsPetFrendlyText{
+        height: auto;
+        width: auto;
+    }
+
+
+    .containerServicesOptionsPetFrendly img{
+        width: 100%;
+        object-fit:cover;
+        height: auto;
+    }
+
+    .containerinform{
+        flex-direction: column;
+        gap: 15px;
+    }
+    *{
+        width: auto;
+    }
+}

@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto Flex', sans-serif;
+	font-weight: 300;
+	color: rgb(46, 44, 44);
+}
+
+body{
+	height: 90vh;
+	width: 100%;
+}
+
+.navBar{
+	height: 80px;
+	max-width: 100%;
+	background-color: antiquewhite;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navBar img{
+	height: 130px;
+	object-fit:cover;
+}
+
+.nav-button{
+    border: 0;
+    padding: 8px;
+    background-color: orange;
+    margin: 8px;
+    cursor: pointer;
+    /* aqui altera o tamanhoo simbolo azul */
+}
+
+.nav-button i{
+    color: #fff;
+}
+
+.overlay{
+    width: 100%;
+    height: 0;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    /* isso aqui determina que essa nav vai ficar sobre qualquer coisa da pagina */
+    position: fixed;
+    right:0;
+    top: 0;
+    overflow-y: hidden;
+    transition: all 0.6s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    /* aqui desce um pouco a posicao*/
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    /* assim coloca um abaixo do outro */
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+/* quando passar o mouse sobre ou ele tiver com foco isso acontecera */
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    /* uma forma de posicionar os itens */
+    font-size: 60px;
+}
+
+
+
+.imgBanner{
+	height: 900px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.imgBanner img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.imgBanner div{
+	margin-left: 15%;
+}
+
+.imageBannerBox{
+	height: 350px;
+	width: 500px;
+	background-color: #fff;
+	opacity: 0.9;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 20px;
+	padding-left: 15px;
+	gap: 40px;
+	position:absolute;
+
+}
+
+.imageBannerBox button{
+	height: 45px;
+	border: none;
+	background-color: orange;
+	opacity: 1;
+	padding: 10px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.imageBannerBox button:hover{
+	background-color: rgb(70, 68, 68);
+}
+
+.imageBannerBox h1{
+	font-size: 40px;
+}
+
+.imageBannerBox p{
+	font-size: 19px;
+}
+
+.imageBannerBox button{
+	background-color: orange;
+}
+
+.acomodacoes{
+	height: 900px;
+	width: 100%;
+	background-color: antiquewhite;
+	
+}
+
+.containerBemVindo{
+	height: 600px;
+	width: 100%;
+	background-color: rgb(170, 159, 144);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 5%;
+
+}
+
+.containerBemVindoContent{
+	height: 600px;
+	width: 1000px;
+	background-color: #fff;
+	display: flex;
+	border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.containerBemVindoContent img{
+	height: 500px;
+	width: 50%;
+	object-fit: cover;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	object-fit: cover;
+}
+
+.containerBemVindoContentImg h1{
+	padding-right: 50%;
+	margin-bottom: 20px;
+}
+
+.containerBemVindoContentText{
+	width: 50%;
+	padding: 10px;
+}
+
+.containerBemVindoContentText h2{
+	text-align: start;
+	opacity: 0.9;
+	padding-top: 20%;
+}
+
+.containerBemVindoContentText p{
+	font-size: 14px;
+	opacity: 0.9;
+	padding-top: 5%;
+	font-weight: 500;
+	color: black;
+}
+
+
+.acomodacoes h2{
+	padding-left: 20%;
+	padding-top: 5%;
+}
+
+.acomodacoesContainer{
+	width: 70%;
+	height: 65%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	grid-template-areas: 
+	"item1 item2 item3"
+	"item1 item4 item4";
+	gap: 5px;
+}
+
+#item1{
+    grid-area: item1;
+}
+
+#item1-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#item2-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#item3-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+#item4-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#item2{
+    grid-area: item2;
+	height: 330px;
+}
+
+#item3{
+    grid-area: item3;
+	height: 330px;
+}
+
+#item4{
+    grid-area: item4;
+	height: 330px;
+}
+
+.acomodacoesContainertipo{
+	background-position: center;
+	display: flex;
+	align-items: flex-end; 
+}
+
+.acomodacoesContainertipoBanner{
+	height: 45px;
+	width: 40%;
+	background-color: black;
+	opacity: 0.5;	
+    position:absolute;
+}
+
+.acomodacoesContainertipo h3{
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+}
+
+.acomodacoesContainertipo a{
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+	text-decoration: none;
+}
+
+.services{
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.test{
+	background-color: rgb(170, 159, 144);
+}
+
+.test h4{
+	padding-left: 290px;
+	padding-top: 110px;
+	margin-bottom: -60px;
+	color: #fff;
+	font-size: 25px;
+}
+
+.servicesBoxes{
+	width: 400px;
+	height: 500px;
+	background-color: #fff;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.servicesBoxes img{
+	width: 100%;
+	height: 50%;
+	transition: .5s;
+	object-fit: cover;
+}
+
+.servicesBoxes img:hover{
+	transform: scale(1.1);
+}
+
+.servicesBoxes h3{
+	padding-top:10%;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.servicesBoxes p{
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.servicesBoxes button{
+	width: 150px;
+	height: 50px;
+	margin-top: 40px;
+	margin-left: 32%;
+	border: none;
+	background-color: rgb(70, 68, 68);
+	color: #fff;
+	cursor: pointer;
+	transition: .5s;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.servicesBoxes button:hover{
+	background-color: orange;
+}
+
+.servicesBoxes>button>a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+}
+
+.reserveJa{
+	background-color: antiquewhite;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.reserveJa button{
+	color: #fff;
+	background-color: orange;
+	height: 60px;
+	width: 150px;
+	border: none;
+	font-size: 20px;
+	cursor: pointer; 
+	transition: 0.5s; 
+	border-radius: 5px;
+	
+}
+
+.reserveJa button:hover{
+	background-color: rgb(70, 68, 68);
+}
+
+.containerinform{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(170, 159, 144);
+}
+
+.containerinform img{
+	height: 200px;
+	width: 200px;
+	object-fit: contain;
+}
+
+.containerinformContatos{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.containerinformEndereco{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.direitos{
+	background-color: black;
+	color: #fff;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.direitos p{
+	color: white;
+}
+
+.map iframe{
+	height: 200px;
+	width: 300px;
+	padding: 10px;
+}
+
+/* MEDIA QUERY */
+
+
+
+@media(max-width:1024px){
+    .imgBanner div{
+        margin-left: 1%;
+    }
+    .navBar{
+        height: 130px;
+        
+    }
+
+    .containerBemVindoContent{
+        width: auto;
+        height: auto;
+    }
+
+    
+}
+
+@media(max-width:768px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    span#burguer{
+        width: 60%;
+        border-radius: 3px;
+        background-color: orange;
+    }
+
+    .imgBanner{
+        height: auto;
+    }
+    .imgBanner img{
+
+        display: flex;
+    }
+
+    .imgBanner div{
+        width: 97%;
+        height: auto;
+    }
+
+    .containerBemVindo{
+        height: auto;
+    }
+
+    .containerBemVindoContent img{
+        width: 100%;
+       
+    }
+
+    .containerBemVindoContent div{
+        width: 100%;
+        height: 100%;
+    }
+
+    .containerBemVindoContentText h2{
+        padding-top: 0;
+    }
+
+
+	.services{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+    
+	.servicesBoxes{
+		width: 90%;
+		height: 350px;
+	}
+
+	.servicesBoxes h3{
+		padding: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin: 0;
+	}
+
+	.servicesBoxes p{
+		padding: 0;
+		margin: 0;
+		margin-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.servicesBoxes button{
+		padding: 0;
+		margin: 0;
+		margin-left: 40%;
+		margin-top: 20px;
+	}
+
+	.containerinform{
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+@media(max-width: 520px){
+    .imgBanner{
+        height: 500px;
+    }
+
+    .imgBanner div{
+        height: 50%;
+    }
+}

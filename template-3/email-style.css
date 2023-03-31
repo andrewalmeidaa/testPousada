@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+	font-weight: 300;
+	color: rgb(46, 44, 44);
+}
+
+body{
+    height: 90vh;
+}
+
+.container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.container a{
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container a:hover{
+    border-bottom: 2px solid black;
+}
