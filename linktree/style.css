@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 90vh;
+    background-color: #eff2fd;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+#imgLogo{
+    height: 150px;
+    border: 2px solid #1336a7;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.container h3{
+    font-size: 25px;
+    color: #1336a7;
+}
+
+.container p{
+    font-size: 17px;
+    color: #1336a7;
+}
+
+.containerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerContentItem{
+    border: 2px solid #1336a7;
+    border-radius: 10px;
+    height: 60px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.containerContentItem:hover{
+    background-color: #1336a7;
+}
+
+.containerContentItem:hover a{
+    color: #fff;
+}
+
+.containerContentItem a{
+    text-decoration: none;
+    color: #1336a7;
+    font-size: 18px;
+}
+
+.linkImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  
+}
+
+#youtubeLogo{
+    height:50px;
+}
+
+#instagramLogo{
+    height: 36px;
+}
+
+#youtubeLogo:hover{
+    height: 55px;
+}
+
+#instagramLogo:hover{
+    height: 45px;
+}
