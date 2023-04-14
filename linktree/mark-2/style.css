@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 90vh;
+    background: rgb(209,109,8);
+background: linear-gradient(90deg, rgba(209,109,8,1) 0%, rgba(163,110,60,1) 17%, rgba(46,46,46,1) 100%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+.circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+.container h3{
+    font-size: 25px;
+    color: #ffff;
+}
+
+.container p{
+    font-size: 17px;
+    color: #ffff;
+}
+
+.containerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerContentItem{
+    border: 2px solid #fff;
+    border-radius: 60px;
+    height: 60px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.containerContentItem:hover{
+    background-color: transparent;
+}
+
+.containerContentItem:hover a{
+    color: #fff;
+}
+
+.containerContentItem a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.linkImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  
+}
+
+#youtubeLogo{
+    height:50px;
+}
+
+#instagramLogo{
+    height: 36px;
+}
+
+#youtubeLogo:hover{
+    height: 55px;
+}
+
+#instagramLogo:hover{
+    height: 45px;
+}
+
+/* MEDIA */
+@media(max-width:360){
+    .containerContentItem{
+        width: 100px;
+    }
+}
+
+@media(max-width:400px){
+    .containerContentItem{
+        width: 350px;
+    }
+}

@@ -91,3 +91,16 @@ body{
 #instagramLogo:hover{
     height: 45px;
 }
+
+/* MEDIA */
+@media(max-width:360){
+    .containerContentItem{
+        width: 100px;
+    }
+}
+
+@media(max-width:400px){
+    .containerContentItem{
+        width: 350px;
+    }
+}
