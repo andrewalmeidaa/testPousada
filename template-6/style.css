@@ -134,3 +134,19 @@ body{
 .imageContainer img{
     height: 700px;
 }
+
+.containerDepoimentosTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hrDepoimentos{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 30px;
+    border: 2px solid black;
+    
+
+}
