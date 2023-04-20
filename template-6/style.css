@@ -145,8 +145,69 @@ body{
 .hrDepoimentos{
     margin-top: 30px;
     margin-bottom: 10px;
-    width: 30px;
-    border: 2px solid black;
-    
+    width: 35px;
+    border: 1px solid black;
+}
 
+.containerDepoimentosBoxContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    /* height: 600px; */
+}
+
+.containerDepoimentosBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.depoimentosHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.depoimentosHeader p{
+    font-size: 17px;
+}
+
+.depoimentosContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.depoimentosContent p{
+    font-size: 18px;
+}
+
+.depoimentosContent h2{
+    font-size: 18px;
+    color: orange;
+}
+
+.containerDepoimentosMais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerDepoimentosMais a{
+    text-decoration: none;
+    color: orange;
+}
+
+.containerDepoimentosMais a:hover{
+    color: rgb(196, 127, 0);
+}
+
+.containerDepoimentosMais hr{
+    width: 40px;
 }
