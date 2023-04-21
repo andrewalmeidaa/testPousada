@@ -167,6 +167,8 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
+    flex-wrap: wrap;
+
 }
 
 .depoimentosHeader{
@@ -186,6 +188,8 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+
+
 
 .depoimentosContent p{
     font-size: 18px;
@@ -241,8 +245,7 @@ body{
 
 .galery img{
     width: 400px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+
 }
 
 .galery a{
@@ -313,3 +316,121 @@ body{
     gap: 10px;  
 }
 
+/* MEDIA */
+
+
+@media(max-width:1250px){
+    .imageContainer img{
+        height: 500px;
+    }
+   
+    .galery{
+        width: 900px;
+        justify-content: center;
+    }
+
+    .galery img{
+        width: 300px;
+
+    }
+
+    .containerDepoimentosMais{
+        padding-top: 15px;
+    }
+
+    .containerContato iframe{
+        width: 900px;
+    }
+
+    .containerContatoInform{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:950px){
+    .containerContato iframe{
+        width: 600px;
+    }
+}
+
+@media(max-width:900px){
+    .containerDepoimentos{
+        width: auto;
+    }
+
+    .galery{
+        width: 600px;
+        justify-content: center;
+    }
+
+    .galery img{
+        width: 500px;
+
+    }
+}
+
+@media(max-width:750px){
+
+    .imageContainer img{
+        height: 400px;
+    }
+
+}
+
+@media(max-width:600px){
+    .imageContainer img{
+        height: 300px;
+    }
+
+    .containerContato iframe{
+        width: 300px;
+    }
+
+    .galery{
+        width: 300px;
+        justify-content: center;
+    }
+
+    .galery img{
+        width: 250px;
+
+    }
+
+}
+
+@media(max-width:450px){
+    .imageContainer img{
+        height: 250px;
+    }
+
+    .containerTitles h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:370px){
+    .imageContainer img{
+        height: 150px;
+    }
+}
+
+@media(max-width:300px){
+  
+    .containerTitles h1{
+        font-size: 30px;
+    }
+
+    .containerContato iframe{
+        width: 150px;
+    }
+
+    .containerDepoimentosBoxContent{
+        width: 250px;
+    }
+
+    .containerContatoInform{
+        justify-content: center;
+        align-items: center;
+    }
+}
